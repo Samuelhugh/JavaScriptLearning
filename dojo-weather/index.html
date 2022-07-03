@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Dojo Weather</title>
+</head>
+<body class="container">
+    <header>
+        <h1>
+            DojoWeather
+        </h1>
+        <nav>
+            <button onclick="getCity(this)">Burbank</button>
+            <button onclick="getCity(this)">Chicago</button>
+            <button onclick="getCity(this)">Dallas</button>
+        </nav>
+    </header>
+    <main>
+        <div class="main-header">
+            <h2>
+                San Jose
+            </h2>
+            <form action="process" id="temp">
+                <label for="degree">show temperature in</label>
+                <select name="degree" id="degree" onchange="temperature()">
+                    <option value="C">&#176;C</option>
+                    <option value="F">&#176;F</option>
+                </select>
+            </form>
+        </div>
+        <hr>
+        <div class="main-body">
+            <div class="column">
+                <h3>Today</h3>
+                <img src="./images/some_rain.png" alt="some rain">
+                <p>some rain</p>
+                <div class="space">
+                    <span class="red number">24&#176;</span>
+                    <span class="blue number">18&#176;</span>
+                </div>
+            </div>
+            <div class="column">
+                <h3>Tomorrow</h3>
+                <img src="./images/some_sun.png" alt="some sun">
+                <p>some sun</p>
+                <div class="space">
+                    <span class="red number">27&#176;</span>
+                    <span class="blue number">19&#176;</span>
+                </div>
+            </div>
+            <div class="column">
+                <h3>Friday</h3>
+                <img src="./images/some_clouds.png" alt="some clouds">
+                <p>some clouds</p>
+                <div class="space">
+                    <span class="red number">21&#176;</span>
+                    <span class="blue number">16&#176;</span>
+                </div>
+            </div>
+            <div class="column">
+                <h3>Saturday</h3>
+                <img src="./images/some_sun.png" alt="some sun">
+                <p>some sun</p>
+                <div class="space">
+                    <span class="red number">26&#176;</span>
+                    <span class="blue number">21&#176;</span>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <img src="./images/cookie.png" alt="cookie">
+        <div class="footercontent">
+            <h3>Stop! Cookie time</h3>
+            <p>We use cookies (sadly not the edible ones) to personalize content and ads, to provide social media
+                features and to analyse our traffic. <a href="#">Read more...</a></p>
+        </div>
+        <button onclick="hide()">I Accept</button>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
